@@ -1,4 +1,3 @@
-
 /*
 Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
 
@@ -24,7 +23,7 @@ const Mark =  {
     },
 
     getSummary: function() {
-        return `${Mark.fullName} BMI ${Mark.bmi} is higher than ${john.fullName}'s ${John.bmi}`;
+        return `${Mark.fullName}'s BMI ${Mark.bmi} is higher than ${John.fullName}'s ${John.bmi}`;
     }
 }
 
@@ -39,11 +38,9 @@ const John =  {
     },
 
     getSummary: function() {
-        return `John Smith's BMI ${John.bmi} is higher than Mark Miller's ${Mark.bmi}`;
+        return `${John.fullName}'s BMI ${John.bmi} is higher than ${Mark.fullName}'s ${Mark.bmi}`;
     }
 }
-
-
 
 if (Mark.calcBMI() > John.calcBMI()) {
     console.log(Mark.getSummary());
