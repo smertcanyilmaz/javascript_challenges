@@ -76,10 +76,6 @@ const {
   odds: { team1, x: draw, team2 },
 } = game;
 
-// const printGoals = Math.floor(Math.random() * game.scored.length);
-// const randomStrings = game.scored[printGoals];
-// console.log(randomStrings);
-
 const printGoals = function (...players) {
   console.log(players);
   console.log(`${players.length} goals were scored`);
@@ -88,3 +84,6 @@ const printGoals = function (...players) {
 printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
 printGoals("Davies", "Muller");
 printGoals(...game.scored);
+
+team1 < team2 && console.log('Team 1 is more likely to win');
+team1 > team2 && console.log('Team 2 is more likely to win');
